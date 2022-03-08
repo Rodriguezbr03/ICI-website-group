@@ -1,0 +1,171 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Logo {
+    background-image: url("Skärmklipp12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 106px;
+    padding: 5px;
+    margin: 0px;
+    position: relative;
+    top:-132px;
+}
+.Logo li{
+    list-style-type: none;
+}
+.Logo li a{
+    text-decoration: none;
+    top: 5px;
+}
+body{
+    background-color: #131c33;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.flex-row h1{
+  color:#ffffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header{
+    background-color:rgb(18, 105, 15);
+    padding: 5px;
+}
+.topnav {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+.logo-img{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+    border-radius: 5%;
+    height: 70px;
+    margin: 0 20px;
+}
+.logo-text{
+    font-size: 25px;
+}
+.nav-item{
+    color: white;
+    margin: auto 2%;
+    padding: 1px 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  max-height: 500px;
+  text-align: center;
+  font-family: arial;
+  position: static;
+  box-shadow: 18px;
+}
+
+#card{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.product-all{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, 1fr);
+ grid-template-columns: repeat(0px, minmax(0px, 0fr));
+ min-width:0px, auto;
+ min-height: 0px, auto;
+ grid-gap: 2rem;
+}
+
+@media screen and (min-width:600px){
+  .product-all{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.product-name{
+width: 100%;
+padding: 20px 10px;;
+background-color: black;
+z-index: 2;
+color:#ffffffff;
+}
+.price {
+  color: #ffffffff;
+  font-size: 22px;
+}
+
+.product-all button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.product-all p{
+color:#ffffff;
+padding: 10px 20px;
+font-family: 'Zen Antique', serif;
+}
+
+.product-name h1, .product-name p{
+  margin: 0px;
+  letter-spacing: 0.1px;
+}
+.product-name h1{
+  font-weight: 100px;
+  font-family: 'Zen Antique', serif;
+}
+.product-name p{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.text-align a{
+  font-size: 2.2rem;
+  padding: 10px 20px;
+  margin: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #535353;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}

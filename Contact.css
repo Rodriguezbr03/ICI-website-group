@@ -1,0 +1,143 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Logo {
+    background-image: url("Skärmklipp12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 106px;
+    padding: 5px;
+    margin: 0px;
+    position: relative;
+    top:-132px;
+}
+.Logo li{
+    list-style-type: none;
+}
+.Logo li a{
+    text-decoration: none;
+    top: 5px;
+}
+body{
+    background-color: #131c33;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.flex-row h1{
+  color:#ffffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header{
+    background-color:rgb(18, 105, 15);
+    padding: 5px;
+}
+.topnav {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+.logo-img{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+    border-radius: 5%;
+    height: 70px;
+    margin: 0 20px;
+}
+.logo-text{
+    font-size: 25px;
+}
+.nav-item{
+    color: white;
+    margin: auto 2%;
+    padding: 1px 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+#Team{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.Team-heading{
+  font-size: 2.2rem;
+  padding: 10px 20px;
+  margin: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #535353;
+  text-align: center;
+}
+.member-box{
+  box-shadow: 2px 2px 30px rgba(0,0,0,1);
+  background-color: #ffffffff;
+}
+.member-img{
+  width:100%;
+  max-width: 362px;
+  max-height: 542px;
+  position: relative;
+}
+.member-img img{
+  width: 100%;
+  height: auto;
+  object-position: center;
+}
+.member-name{
+  width: 100%;
+  padding: 20px 10px;;
+  background-color: #ffffffff;
+  z-index: 2;
+}
+.member-name h3, .member-name h5{
+  color: #1b1b1b;
+  margin: 0px;
+  letter-spacing: 0.3px;
+}
+.member-naem h5{
+  font-weight: 500;
+}
+.member-name h3{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.team-box-container{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, 1fr);
+ grid-template-columns: repeat(0px, minmax(0px, 0fr));
+ min-width:0px, auto;
+ min-height: 0px, auto;
+ grid-gap: 2rem;
+}
+@media screen and (min-width:600px){
+  .team-box-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
